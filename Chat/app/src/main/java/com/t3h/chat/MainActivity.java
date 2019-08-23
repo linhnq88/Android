@@ -1,6 +1,7 @@
 package com.t3h.chat;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
