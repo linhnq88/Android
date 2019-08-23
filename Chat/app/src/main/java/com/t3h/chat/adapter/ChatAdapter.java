@@ -42,7 +42,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatHolder> {
 
     @Override
     public int getItemCount() {
-        return data = null ? 0 : data.size();
+        return data == null ? 0 : data.size();
     }
 
     public class ChatHolder extends RecyclerView.ViewHolder {
