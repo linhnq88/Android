@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.t3h.chat.R;
+import com.t3h.chat.api.ApiBuilder;
 import com.t3h.chat.model.Chat;
 
 import java.util.ArrayList;
@@ -18,6 +19,8 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatHolder> {
 
     private LayoutInflater inflater;
     private ArrayList<Chat> data;
+    private ChatAdapter adapter;
+    private String userName;
 
     public ChatAdapter(Context context){
         this.inflater = LayoutInflater.from(context);
@@ -27,6 +30,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatHolder> {
         this.data = data;
         notifyDataSetChanged();
     }
+
 
     @NonNull
     @Override
